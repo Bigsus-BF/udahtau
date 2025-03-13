@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <header>
+            <a href="#" class="back-button">←</a>
+            <h2>Profile</h2>
+        </header>
+        <div class="profile-card">
+            <div class="profile-pic"></div>
+            <div class="profile-info">
+                <h3>ARDI</h3>
+                <p>Karyawan</p>
+            </div>
+        </div>
+        <section class="quran-progress">
+            <h3>Id Quran yang di hafal <button class="add-button">+</button></h3>
+            <div class="progress-card">
+                <h4>1000020012 - Fulan 1</h4>
+                <p><strong>10 Juz</strong></p>
+                <div class="progress-bar"><div class="progress" style="width: 33%;"></div></div>
+                <p>1 Juz - 30 Juz</p>
+            </div>
+            <div class="progress-card">
+                <h4>1000020013 - Fulan 2</h4>
+                <p><strong>3 Juz</strong></p>
+                <div class="progress-bar"><div class="progress" style="width: 10%;"></div></div>
+                <p>1 Juz - 30 Juz</p>
+            </div>
+            <div class="progress-card">
+                <h4>1000020014 - Fulan 3</h4>
+                <p><strong>5 Juz</strong></p>
+                <div class="progress-bar"><div class="progress" style="width: 16%;"></div></div>
+                <p>1 Juz - 30 Juz</p>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <a href="#" class="nav-item">🏠</a>
+                <a href="#" class="nav-item">⏳</a>
+                <a href="#" class="nav-item">📅</a>
+                <a href="#" class="nav-item">⚙️</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back-button {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.profile-card {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.quran-progress {
+    margin-top: 20px;
+}
+
+.add-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    float: right;
+}
+
+.progress-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 3px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background: teal;
+    border-radius: 3px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+</style>
